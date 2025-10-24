@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <!--Responsividade-->
+        <meta name="viewport" content="width=device-width scale=1.0">
+        <!--Título-->
+        <title>Jogo de adivinhação</title>
+        <!--Link para arquivo CSS-->
+        <link rel="stylesheet" href="styles.css">
+        <!--Link para arquivo JS-->
+        <script src="script.js"></script>
+    </head>
+</html>
+    <body>
+        <!--Seção principal do jogo-->
+        <main>
+            <!--Título-->
+            <h1>Jogo de adivinhação</h1>
+            <!--Breve descrição do jogo-->
+            <h3>Neste jogo você terá 10 chances para tentar adivinhar qual número (1 - 100) a máquina gerou de resultado</h3>
+            <!--Local onde irá colocar um número de 0 a 100 para 
+                tentar adivinha se coindice com o que a máquina
+                escolheu                                        -->
+            <input id="numeroEscolhido" placeholder="Digite um número 1 a 100" name="numeroEscolhido" type="number" />
+            <!--Botão chutar com função JS para verificar acerto ou erro-->
+            <button id="chutar" onclick="ativarJogo()">Chutar</button>
+            <!--parágrafos onde mostrará ao Usuário a quatidade de tentativas
+                restante e se houve acerto ou não-->
+            <p id="resultado"></p>
+            <p id="tentativas"></p>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+
+/*CSS Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    /*Referente a imagem*/
+    background-image: url("imagem.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*fonte de texto*/
+    font-family: sans-serif;
+    /*Centralizando o texto*/
+    text-align: center;
+}
+
+main {
+
+    /*largura*/
+    width: 300px;
+    /*margem e espassamento*/
+    margin: 50px auto;
+    padding: 40px 10px;
+    /*borda e sombreado*/
+    border: 3px solid black; 
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px black;
+    /*Cores de fundo e fonte*/
+    background-color: darkblue;
+    color: white;
+}
+
+/*Referente ao campo de inserção do número e o botão*/
+input, button {
+    /*Para que cada item fique apenas em uma linha*/
+    display: block;
+    /*Alinhamento de texto*/
+    text-align: center;
+    /*Tamanho*/
+    width: 100%;
+    height: 40px;
+    /*Margem e espassamento*/
+    margin: 40px auto;
+    padding: 50px auto;
+    /*Bordas e sombreamento*/
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px black;
+    /*Mudanã do ponteiro do mouse quando passar o click acima*/
+    cursor: pointer;
+
+}
+
+/*Refere-se ao texto explicativo do input*/
+input::placeholder{
+    /*Alinhamento do texto*/
+    text-align: center;
+}
+
+/*Botão ao clicar*/
+button:active{
+    /*Cores de fundo e da fonte*/
+    background-color: darkblue;
+    color: white;
+
+}
+
+/*Texto principal do jogo*/
+h1 {
+    /*espassamento*/
+    padding: 20px;
+}
+
+/*Onde será mostrado a tentativa e resultado*/
+p {
+    /*espassamento*/
+    padding-bottom: 50px;
+}
